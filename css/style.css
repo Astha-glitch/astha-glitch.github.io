@@ -1,0 +1,264 @@
+/* CSS Reset */ 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+
+/* Navigation Bar: Logo and Image */
+#logo{ 
+    margin: 3px 23px;
+}
+
+#logo img{
+    height: 55px;
+    margin: 2px 5px;
+    cursor: pointer;
+
+}
+
+/* Navigation Bar: List items Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li{  
+    list-style: none;
+    font-size: 1.08rem;
+    
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 425px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url(../img/pexels-pixabay-326278.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+    
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+   
+}
+
+/* Services Section */
+#services{
+    margin: 27px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 3px 34px;
+    border-radius: 28px;
+    background-color: rgb(236, 236, 236);
+    margin-bottom: 18px;
+    
+}
+
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+    
+
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Clients Section */
+#client-section{
+    height: 350px;
+    position: relative;
+}
+
+#client-section h1{
+    font-size: 2.7rem;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../img/pexels-trang-doan-1092730.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.35;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 22px;
+}
+.client-items{
+    padding: 24px;
+
+}
+
+#clients img{
+    height: 70px;
+    
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+    /* height: 344px; */
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../img/contact-us-gc8d27a2b1_1920.jpg) no-repeat center center/cover;
+
+}
+#contact h1{
+    font-size: 2.7rem;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+
+}
+
+#contact-box form{
+    width: 40%;
+
+    
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer{
+    background: rgb(255, 53, 53);
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* Utility Classes */
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    padding: 11px;
+}
+#services-container h1{
+    font-size: 2.7rem;
+    font-family: 'Bree Serif', serif;
+    margin: 17px;
+
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.7rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(152, 45, 45);
+    color: white;
+    margin:  17px;
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    background: white;
+}
+
+.center{
+    text-align: center;
+}
